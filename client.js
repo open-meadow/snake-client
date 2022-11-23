@@ -10,12 +10,18 @@ const connect = () => {
   conn.setEncoding("utf8");
 
   // conn.on("connect", () => {conn.write("I am a snake")});
+  conn.on("connect", () => {
+    // console.log(connect);
+    console.log("Connection Established");
+    conn.write("Name: yay")
+  })
   
   conn.on("data", (messageFromServer) => {
     conn.write("me is snek")
     // code that does something when the connection is first established
     console.log("The server says: ", messageFromServer);
   });
+
 
   return conn;
 };
