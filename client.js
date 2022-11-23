@@ -17,6 +17,7 @@ const connect = () => {
 
   conn.on("data", (messageFromServer) => {
     conn.write("me is snek")
+    conn.write("Name: yay");
     // code that does something when the connection is first established
     console.log("The server says: ", messageFromServer);
   });

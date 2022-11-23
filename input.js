@@ -28,6 +28,26 @@ const handleUserInput = function(input) {
     console.log("d");
     connection.write("Move: right");    
   }
+
+  if(input === "i") {
+    console.log("i");
+    connection.write("Say: MrFish");    
+  }
+
+  if(input === "k") {
+    console.log("k");
+    connection.write("Say: schlam");    
+  }
+
+  if(input === "j") {
+    console.log("j");
+    connection.write("Say: toit");    
+  }
+
+  if(input === "l") {
+    console.log("l");
+    connection.write("Say: kookoo");    
+  }
 };
 
 const setupInput = function(conn) {
