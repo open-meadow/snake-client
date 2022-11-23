@@ -1,30 +1,31 @@
 const { connect } = require("http2");
+const {MOVE_UP_KEY, MOVE_DOWN_KEY, MOVE_LEFT_KEY, MOVE_RIGHT_KEY, EXIT} = require('./consts');
 let connection;
 
 const handleUserInput = function(input) {
   console.log("Input is", input);
   
-  if (input === '\u0003') {
+  if (input === EXIT) {
     console.log(("Byeeeeee"));
     process.exit();
   }
 
-  if(input === "w") {
+  if(input === MOVE_UP_KEY) {
     console.log("w");
     connection.write("Move: up");    
   }
 
-  if(input === "a") {
+  if(input === MOVE_LEFT_KEY) {
     console.log("a");
     connection.write("Move: left");    
   }
 
-  if(input === "s") {
+  if(input === MOVE_DOWN_KEY) {
     console.log("s");
     connection.write("Move: down");    
   }
 
-  if(input === "d") {
+  if(input === MOVE_RIGHT_KEY) {
     console.log("d");
     connection.write("Move: right");    
   }
