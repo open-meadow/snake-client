@@ -13,51 +13,6 @@ const connect = () => {
   conn.on("connect", () => {
     // console.log(connect);
     console.log("Connection Established");
-    // conn.write("Name: yay");
-    // setTimeout(() => {
-    //   conn.write("Move: right")
-    // }, 500);
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 500);
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 1000);
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 1500);
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 2000);
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 2500);
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 3000);
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 3500);
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 4000);
-
-    // setTimeout(() => {
-    //   conn.write("Move: left");
-    // }, 1000);
-
-    // setTimeout(() => {
-    //   conn.write("Move: down");
-    // }, 1500);
-
   })
 
   conn.on("data", (messageFromServer) => {
@@ -65,9 +20,53 @@ const connect = () => {
     // code that does something when the connection is first established
     console.log("The server says: ", messageFromServer);
   });
-
-
+  
+  
   return conn;
 };
 
 module.exports = connect;
+// conn.write("Name: yay");
+// setTimeout(() => {
+//   conn.write("Move: right")
+// }, 500);
+
+// setTimeout(() => {
+//   conn.write("Move: up");
+// }, 500);
+
+// setTimeout(() => {
+//   conn.write("Move: up");
+// }, 1000);
+
+// setTimeout(() => {
+//   conn.write("Move: up");
+// }, 1500);
+
+// setTimeout(() => {
+//   conn.write("Move: up");
+// }, 2000);
+
+// setTimeout(() => {
+//   conn.write("Move: up");
+// }, 2500);
+
+// setTimeout(() => {
+//   conn.write("Move: up");
+// }, 3000);
+
+// setTimeout(() => {
+//   conn.write("Move: up");
+// }, 3500);
+
+// setTimeout(() => {
+//   conn.write("Move: up");
+// }, 4000);
+
+// setTimeout(() => {
+//   conn.write("Move: left");
+// }, 1000);
+
+// setTimeout(() => {
+//   conn.write("Move: down");
+// }, 1500);
